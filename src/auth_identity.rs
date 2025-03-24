@@ -55,7 +55,7 @@ impl Username {
         Ok(Self {
             value: format!("{account_name}@{upn_suffix}"),
             format: UserNameFormat::UserPrincipalName,
-            sep_idx: Some(account_name.len()),
+            sep_idx: None,
         })
     }
 
